@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    padding: 0;
+}
+
+body{
+    max-width: 1280px;
+    margin:0 auto;
+    background-color: #696969;
+}
+img{
+    color:white;
+}
+body.modo-escuro{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+ul{
+    list-style:none;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px;
+}
+.imagem-botao{
+    height:50px;
+
+}
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.main{
+    padding:8rem;
+    display: flex;
+    align-items:center;   
+
+}
+img{
+    height:5rem;
+}
+.listagem-pokemon{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.cartao-pokemon{
+    width: 200px;
+    background: #d8e3ec;
+    padding: 15px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:15px;
+    border-radius:15px;
+    transition: 0.2s ease-in-out;/*entrar e sair suave*/
+    border:1px solid #333333;
+
+}
+
+.cartao-pokemon:hover{
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #757575;
+}
+
+.modo-escuro .cartao-pokemon:hover{
+    background-color: #00bbb2;
+
+}
+
+.informações{
+    border:1px solid rgb(146, 146, 146);
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+}
+ span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.tipos{
+    display:flex;
+    gap:8px;
+}
+
+.tipo-fogo{
+    background: rgba(255, 0, 0, 0.829);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.tipo-agua{
+    background: rgba(0, 210, 218, 0.829);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.tipo-inseto{
+    background: rgba(82, 167, 2, 0.829);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.tipo-veneno{
+    background: rgba(255, 0, 234, 0.938);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.tipo-grama{
+    background: rgba(51, 255, 0, 0.829);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.descricao{
+    max-height:60px;
+    overflow-y:scroll;
+    cursor:pointer;
+    font-size: 14px;
+    padding-right: 1px;
+}
+
